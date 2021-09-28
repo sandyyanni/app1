@@ -3,36 +3,120 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 50px;
+    height: 50px;
+    display: block;
+    overflow: visible;
+    border: 5px solid #000;
+    position: relative;
+    transform: rotate(0deg);
+    transition: transform .4s ease-in-out;
+    flex-shrink: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #dededf;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+.box:hover {
+  background-color: #be8484;
+  width: 75px;
+  height: 75px;
+  transform: rotate(360deg);
+}
+ @media (prefers-reduced-motion: no-preference) {
+  .App-logoo {
+    animation: App-logo-spin infinite 2s linear;
   }
+} 
+
+.sec {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+.sec:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.sec:hover:after {
+  width: 100%;
+  background: rgb(2, 2, 3);
+}
+ 
+.list-item {
+  color: rgb(189, 185, 185);
+  background-color: rgb(202, 199, 199);
+  transition: all 1s ease-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list-item:hover,
+.list-item:focus {
+  color: rgb(12, 11, 11);
+  background-color: rgb(189, 101, 101);
+}
+
+.side {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.inner-container, .outer-container {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.inner-container {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #f0eeee;
+}
+
+.App-section {
+  background-color: #ebecee;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(15px + 2vmin);
+  color: rgb(46, 44, 44);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #be8484;
+}
+.bold {
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+target {
+  transition: all 1s ease-out;
+}
+
+.target:hover {
+  font-size: 15px;
 }
