@@ -5,7 +5,7 @@ function About() {
     return (
       <div className="side outer-container">
        
-        <h4 className="bold" ><a name="about"></a>About :</h4>
+        <h4 className="bold" >About :</h4>
         <p>I  am a full stack web developer , I help designers, small agencies and businesses bring their ideas to life. Powered by  VS Code and coffee, I turn your requirements into   websites - on time and on budget.
 
 Outside of work I have a beautiful family and I like spending time with my son and listening to music .

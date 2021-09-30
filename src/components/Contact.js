@@ -8,7 +8,7 @@ export default class ContactMe extends Component {
                 <Card>
                   <Card.Body>
                     <section className="App inner-continer side App-section">
-                      <h2><a name="contact"></a>Interested in doing a project together?</h2>
+                      <h2>Interested in doing a project together?</h2>
                       <Button className="target target:hover" variant="outline-secondary" size="lg" href="mailto:sandyyanni3@gmail.com"><span>Contact Me &rarr;</span></Button>{' '}
                     </section>
                   </Card.Body>

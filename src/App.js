@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -16,7 +16,7 @@ import Footer from './components/Footer';
 
  function App() {
   return (
-    <Router>
+    <Router basename="/app1">
     <div>
 
 <section className="App">

@@ -15,12 +15,12 @@ function Home() {
        <img src="./images/img.jpg" alt="Laptop"/>
        </section>
   
-       <section className="inner-continer side">
+       <section className="inner-continer side" id="about">
        <About/>
        </section>
-  
+       <section id="contact">
        <Contact/>
-       
+       </section>
        
       </div>
     );
