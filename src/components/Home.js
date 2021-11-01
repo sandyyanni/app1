@@ -1,6 +1,6 @@
 import React from "react";
 
-import About from './About';
+
 import Contact from './Contact';
 import Picture from '../images/img.jpg';
 
@@ -16,9 +16,7 @@ function Home() {
        <img src={Picture} alt="Laptop"/>
        </section>
   
-       <section className="inner-continer side" id="about">
-       <About/>
-       </section>
+       
        <section id="contact">
        <Contact/>
        </section>

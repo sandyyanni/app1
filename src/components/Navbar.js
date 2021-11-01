@@ -3,7 +3,7 @@ import {Navbar,Container,Nav} from 'react-bootstrap';
 import {
     Link as LinkR
   } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+
 
   
   
@@ -25,9 +25,8 @@ export default class NavbarTop extends Component {
                             navbarScroll
                             >
                         <Nav.Link className="sec sec:after sec:hover:after" as={LinkR}to={"/"}>Home</Nav.Link>
-                        <Nav.Link className="sec sec:after sec:hover:after" as={LinkS}to={"about"}>About</Nav.Link>
-                        <Nav.Link className="sec sec:after sec:hover:after" as={LinkR}to={"/services"}>Services</Nav.Link>
-                        <Nav.Link className="sec sec:after sec:hover:after" as={LinkS}to={"contact"}>Contact</Nav.Link>
+                        <Nav.Link className="sec sec:after sec:hover:after" as={LinkR}to={"/about"}>About</Nav.Link>
+                        <Nav.Link className="sec sec:after sec:hover:after" as={LinkR}to={"/contact"}>Contact</Nav.Link>
                         </Nav>
                         </Navbar.Collapse>
                     </Container>
